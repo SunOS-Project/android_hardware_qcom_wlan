@@ -123,6 +123,7 @@ int TdlsCommand::handleEvent(WifiEvent &event)
                             __FUNCTION__);
                     return WIFI_ERROR_INVALID_ARGS;
                 }
+
                 if (nla_len(tb_vendor[QCA_WLAN_VENDOR_ATTR_TDLS_STATE_MAC_ADDR]) != sizeof(mac_addr))
                 {
                     ALOGE("%s: QCA_WLAN_VENDOR_ATTR_TDLS_MAC_ADDR Invalid mac addr lenght",
